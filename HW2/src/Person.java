@@ -10,4 +10,22 @@ public class Person {
         this.age = age;
         this.email = email;
     }
+
+    public String getfName() {
+        return fName;
+    }
+    public String getlName() {
+        return lName;
+    }
+    public int getAge() {
+        return age;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s %s, age: %d, email: %s", fName, lName, age, email);
+    }
 }
