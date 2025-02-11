@@ -1,3 +1,11 @@
-public class DHL implements MailDeliveryService {
- // Его способ отправки почты — напечатать что-то вроде: «Положи письмо в конверт, поставь марку, отправь».
+public class DHL extends Sender implements MailDeliveryService {
+
+    @Override
+    public String getOperationName() {
+        return "DHL";
+    }
+    @Override
+    public String send(){
+        return "Положи письмо в конверт, приклей марку, положи в почтовый ящик.";
+    }
 }
